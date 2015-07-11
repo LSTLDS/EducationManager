@@ -1,0 +1,24 @@
+﻿<Window x:Class="高校教务系统.学生信息添加"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="学生信息添加" Height="350" Width="525">
+    <Grid>
+        <Label Content="学号" HorizontalAlignment="Left" Margin="24,40,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_StuID" Height="29" Margin="91,40,304,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="姓名" HorizontalAlignment="Left" Margin="24,100,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_SName" Height="29" Margin="91,100,304,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="性别" HorizontalAlignment="Left" Margin="24,160,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_Sex" Height="29" Margin="91,160,304,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="年龄" HorizontalAlignment="Left" Margin="289,40,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_age" Height="29" Margin="356,40,39,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="所在地" HorizontalAlignment="Left" Margin="289,80,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_Location" Height="29" Margin="356,80,39,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="学分" HorizontalAlignment="Left" Margin="289,120,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_Credit" Height="29" Margin="356,120,39,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label Content="班级" HorizontalAlignment="Left" Margin="289,160,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="Lst_ClaID" Height="29" Margin="356,160,39,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Button x:Name="ADDButton" Content="添加" Margin="24,238,304,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF007ACC" BorderBrush="#FF007ACC" BorderThickness="1" FontSize="16" Click="ADDButton_Click" Height="37"/>
+        <Button x:Name="CancelButton" Content="取消" Margin="289,238,39,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF007ACC" BorderBrush="#FF007ACC" BorderThickness="1" FontSize="16" Click="CancelButton_Click" Height="37"/>
+
+    </Grid>
+</Window>

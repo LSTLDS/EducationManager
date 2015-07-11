@@ -1,0 +1,14 @@
+﻿<Window x:Class="高校教务系统.学生个人信息查询"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="学生个人信息查询" Height="350" Width="525">
+    <Grid>
+        <Label Content="请再次输入学号验证" HorizontalAlignment="Left" Margin="44,18,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="143" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="SID" Height="29" Margin="187,18,120,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center"/>
+        <Button x:Name="OKButton" Content="确定" Margin="397,18,29,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF007ACC" BorderBrush="#FF007ACC" BorderThickness="1" FontSize="16" Click="OKButton_Click" Height="29"/>
+        <DataGrid AutoGenerateColumns="True" x:Name="View" HorizontalAlignment="Left" Margin="43,62,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.25,-1.385" Height="201" Width="443" SelectionChanged="DataGrid_SelectionChanged" ItemsSource="{Binding Path=table1}"/>
+
+        <Button x:Name="BackButton" Content="返回" Margin="21,285,405,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF007ACC" BorderBrush="#FF007ACC" BorderThickness="1" FontSize="16" Click="BackButton_Click" Height="24"/>
+
+    </Grid>
+</Window>

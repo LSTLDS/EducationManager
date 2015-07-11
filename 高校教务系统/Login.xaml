@@ -1,0 +1,30 @@
+﻿<Window x:Class="高校教务系统.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="登陆" Height="400" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="447*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="用户名" HorizontalAlignment="Left" Margin="75,221,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <TextBox x:Name="uidTextBox" Height="29" Margin="142,221,165,0" TextWrapping="NoWrap" MaxLength="9" VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center" Grid.Column="2"/>
+        <Label Content="登录类型" HorizontalAlignment="Left" Margin="75,167,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Height="29" Width="67" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="2"/>
+
+        <Label Content="密码" HorizontalAlignment="Left" Margin="75,255,0,0" VerticalAlignment="Top" Foreground="White" FontSize="13.333" Background="#FF007ACC" Width="67" Height="29" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <PasswordBox x:Name="pwsTextBox" Height="29" Margin="142,255,165,0"  VerticalAlignment="Top" Background="Transparent" Foreground="#FF2B2B2B" BorderBrush="#FF007ACC" FontSize="16" VerticalContentAlignment="Center" Grid.Column="2"/>
+        <Button x:Name="loginButton" Content="登录" Margin="106,316,193,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FF007ACC" BorderBrush="#FF007ACC" BorderThickness="1" FontSize="16" Click="loginButton_Click" Grid.Column="2" Height="24"/>
+        <Label Content="bate 1.0  by 刘树铜" HorizontalAlignment="Left" Margin="301,334,0,0" VerticalAlignment="Top" Width="120" Grid.Column="2" Height="25"/>
+        <Rectangle Fill="#FF007ACC" HorizontalAlignment="Left" Height="140" RadiusY="5" RadiusX="15" VerticalAlignment="Top" Width="517" Grid.ColumnSpan="3"/>
+        <Label Content="高校教务系统"  Foreground="White" Grid.Column="2"  FontSize="50" HorizontalAlignment="Left" Margin="35,33,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="Users" Grid.Column="3" HorizontalAlignment="Left" Margin="142,167,0,0" VerticalAlignment="Top" Width="140" Height="29" SelectionChanged="ComboBox_SelectionChanged" >
+            <ComboBoxItem Content="管理员" HorizontalAlignment="Center" Width="138" Foreground="#FF007ACC" FontSize="13"/>
+            <ComboBoxItem Content="教师" HorizontalAlignment="Center" Width="138" Foreground="#FF007ACC" FontSize="13"/>
+            <ComboBoxItem Content="学生" HorizontalAlignment="Center" Width="138" Foreground="#FF007ACC" FontSize="13"/>
+        </ComboBox>
+
+
+    </Grid>
+
+</Window>
